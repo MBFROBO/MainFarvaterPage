@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<!-- https://farvater.online/ -->
+		<loc>http://127.0.0.1:5500</loc> 
+		<lastmod>2023-10-24T09:26:16+00:00</lastmod>
+	</url>
+	<url>
+		<!-- https://farvater.online/policy -->
+		<loc>http://127.0.0.1:5500/policy</loc>
+		<lastmod>2023-10-23T10:26:17+00:00</lastmod>
+	</url>
+</urlset>

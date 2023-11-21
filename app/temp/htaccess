@@ -1,0 +1,33 @@
+ErrorDocument 403 /page40391595.html
+ErrorDocument 404 /page40391595.html
+
+DirectoryIndex page39548763.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://farvater\.online/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.farvater.online [NC]
+RewriteRule ^(.*)$ https://farvater\.online/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^test$ page39548763.html [NC]
+RewriteRule ^test/$ page39548763.html [NC]
+
+RewriteRule ^error$ page40391595.html [NC]
+RewriteRule ^error/$ page40391595.html [NC]
+
+RewriteRule ^footer$ page40391745.html [NC]
+RewriteRule ^footer/$ page40391745.html [NC]
+
+RewriteRule ^heder$ page40391871.html [NC]
+RewriteRule ^heder/$ page40391871.html [NC]
+
+RewriteRule ^policy$ page40544410.html [NC]
+RewriteRule ^policy/$ page40544410.html [NC]
+
+

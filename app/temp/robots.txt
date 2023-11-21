@@ -1,0 +1,22 @@
+User-Agent: *
+Disallow: /page40391595.html
+Disallow: /error
+Disallow: /page40391745.html
+Disallow: /footer
+Disallow: /page40391871.html
+Disallow: /heder
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://farvater.online/sitemap.xml
+Sitemap: https://farvater.online/sitemap-feeds.xml
+Host: https://farvater.online

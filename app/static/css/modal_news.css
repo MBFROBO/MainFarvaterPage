@@ -1,0 +1,148 @@
+#shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 1000%;
+    width: 100%;
+
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    overflow: hidden;
+}
+
+#exit {
+    position: absolute;
+    right: 3%;
+    top: 87%;
+
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#exit img {
+    position: relative;
+    left: 0;
+    right: 0;
+
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+
+#modal_body {
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 95%;
+
+    height: 85vh;
+    width: 50vw;
+
+    background-color: rgb(232, 235, 238);
+    border-radius: 5px;
+    z-index: 100;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+#modal_image_container {
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 45%;
+    width: 55%;
+}
+
+#modal_image_container img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+#modal_head_container {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+
+}
+
+#modal_head_container p {
+    position: relative;
+    top: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    color: #2765af;
+    font-size: 24px;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+
+
+#modal_text_container {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    
+}
+
+#modal_text_container p2 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+
+
+#modal_contacts_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#modal_contacts_container {
+    position: relative;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#modal_contacts_container p2 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+
+#modal_contacts_container p3 {
+    position: relative;
+    text-decoration: underline;
+    margin-left: 5px;
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+
+#modal_contacts_container p3:hover {
+    position: relative;
+    transition: 0.4s;
+    margin-left: 10px;
+    color: rgb(133, 165, 235);
+    text-decoration: underline;
+}
