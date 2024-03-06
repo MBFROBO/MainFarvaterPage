@@ -14,10 +14,6 @@ services:
         ports:
             - 8000:8000
         environment:
-            - TELEGRAM_API_ID=20575050
-            - TELEGRAM_API_HASH=41116e47843badfda5ecf096a05af461
-            - TELEGRAM_API_USERNAME=anikdote
-            - CHANNEL_LINK=https://t.me/farvatercanbus
             - LANDING_HOST=0.0.0.0
             - LANDING_PORT=8000
 
