@@ -6,15 +6,15 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from pathlib import Path
 
 from datetime import date, datetime
 
 from logger import logging
 
-# dotenv_path = Path(__file__).parent.absolute() / ".env"
-# if os.path.exists(dotenv_path): load_dotenv(dotenv_path)
+dotenv_path = Path(__file__).parent.absolute() / ".env"
+if os.path.exists(dotenv_path): load_dotenv(dotenv_path)
 
 app = FastAPI()
 

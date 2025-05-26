@@ -1,0 +1,129 @@
+
+:root {
+    --primary-color: #000000;
+    --primary-hover: #1a1a1a;
+    --text-color: #2d3748;
+    --bg-color: #f7fafc;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #4a5568;
+}
+
+.alert {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 12px var(--shadow);
+    border-radius: 0.5rem;
+    max-width: 24rem;
+    width: 90%;
+    padding: 1rem;
+    z-index: 1000;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    }
+}
+
+.alert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.alert-text {
+    flex-grow: 1;
+}
+
+.alert-text p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #4a5568;
+}
+
+.alert-text a {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
+.alert-close {
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #a0aec0;
+    transition: color 0.2s ease-in-out;
+}
+
+.alert-close:hover {
+    color: #718096;
+}
+
+.alert-button {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.alert-button button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.alert-button button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Скрытие alert */
+.alert.hidden {
+    display: none;
+}

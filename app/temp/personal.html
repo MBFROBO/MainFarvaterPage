@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Согласие на обработку данных</title>
+</head>
+
+<body>
+    <div class="alert" id="alertBox">
+    <div class="alert-content">
+      <div class="alert-text">
+        <p>Используя сайт, вы предоставляете согласие на обработку ваших персональных данных.</p>
+        <a href="#">Политика в отношении обработки персональных данных</a>
+      </div>
+      <span class="alert-close" onclick="closeAlert()">×</span>
+    </div>
+    <div class="alert-button">
+      <button type="button" onclick="closeAlert()">Принять условия</button>
+    </div>
+  </div>
+
+  <script>
+    function closeAlert() {
+      const alert = document.getElementById('alertBox');
+      alert.classList.add('hidden');
+    }
+  </script>
+</body>
