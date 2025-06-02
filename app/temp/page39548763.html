@@ -3329,6 +3329,8 @@
                     </div>
                     <style>
                         .approvement {
+                            display: inline;
+                            text-wrap: nowrap;
                             z-index: 1000;
                             color: #cecece;
                             font-family: 'PT Sans', Arial, sans-serif;
@@ -3338,6 +3340,7 @@
                             margin-top: auto;
                             position: fixed;
                             bottom: 5px;
+                            width: auto;
                         }
 
                         .approvement .company {
@@ -3347,12 +3350,15 @@
                         .approvement .policy {
                             font-family: 'PT Sans', Arial, sans-serif;
                         }
-
                     </style>
                     <div
                         class="t396__elem tn-elem tn-elem__6420421911695307877206 js-sbs-anim-trigger_hover t-sbs-anim_started t-sbs-anim_reversed approvement">
-                        <span class="company">ООО "КАН-ВЭЙ"</span>
-                        <a class="policy" href="https://farvater.online/policy"> Политика в отношении обработки персональных данных</a>
+                        <span class="company">© 2025, ООО "КАН-ВЭЙ"</span>
+                        <a class="policy" href="https://farvater.online/policy"> Политика в отношении обработки
+                            персональных данных</a>
+                        <a class="policy" href="https://farvater.online/cookies" style="display: inline-block;">/ Политика использования файлов Cookie</a>
+
+                        
                     </div>
                 </div>
 
@@ -3413,9 +3419,11 @@
             }
 
             .alert-text a {
+                font-family: "PT Sans", Arial, sans-serif !important;
+                font-size: 14px !important;
                 text-align: center;
                 display: block;
-                margin-top: 0.5rem;
+                margin-top: 0rem;
                 font-size: 0.75rem;
                 color: #4f46e5;
                 text-decoration: underline;
@@ -3463,8 +3471,13 @@
         <div class="alert" id="alertBox">
             <div class="alert-content">
                 <div class="alert-text">
-                    <p>Используя сайт, вы предоставляете согласие на обработку ваших персональных данных.</p>
-                    <a href="https://farvater.online/policy">Политика в отношении обработки персональных данных</a>
+                    <p>Используя этот информационный ресурс, Вы предоставляете своё согласие на
+                        <a class="policy a" href="https://farvater.online/cookies" style="
+                            display: inline-block;
+                            ">использование cookie-файлов</a> и обработку ваших персональных данных.
+                    </p>
+                    <a class="policy a" href="https://farvater.online/policy">Политика в отношении обработки
+                        персональных данных</a>
                 </div>
             </div>
             <div class="alert-button">

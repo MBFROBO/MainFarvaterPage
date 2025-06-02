@@ -83,6 +83,8 @@ p {
 }
 
 .alert-text a {
+    font-family:"PT Sans", Arial, sans-serif !important;
+    font-size: 14px !important;
     display: block;
     margin-top: 0.5rem;
     font-size: 0.75rem;
@@ -126,4 +128,9 @@ p {
 /* Скрытие alert */
 .alert.hidden {
     display: none;
+}
+
+.policy a {
+    font-family:"PT Sans", Arial, sans-serif !important;
+    font-size: 14px !important;
 }

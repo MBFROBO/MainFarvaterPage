@@ -7,23 +7,32 @@
 </head>
 
 <body>
-    <div class="alert" id="alertBox">
-    <div class="alert-content">
-      <div class="alert-text">
-        <p>Используя сайт, вы предоставляете согласие на обработку ваших персональных данных.</p>
-        <a href="#">Политика в отношении обработки персональных данных</a>
-      </div>
-      <span class="alert-close" onclick="closeAlert()">×</span>
-    </div>
-    <div class="alert-button">
-      <button type="button" onclick="closeAlert()">Принять условия</button>
-    </div>
-  </div>
 
-  <script>
-    function closeAlert() {
-      const alert = document.getElementById('alertBox');
-      alert.classList.add('hidden');
+    <div class="custom-menu-container">
+    <div class="custom-logo">
+        <img src="/static/images/tild3537-6431-4130-b335-643232363730___-_.svg" alt="Логотип" style="max-width: 150px;" />
+    </div>
+
+    <!-- Бургер-меню -->
+    <div id="burgerMenu" class="custom-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+
+    <script>
+    // Получаем элементы
+    const burger = document.getElementById('burgerMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    // Функция для открытия/закрытия мобильного меню
+    function toggleMenu() {
+        mobileMenu.classList.toggle('active');
+        burger.classList.toggle('open');
     }
-  </script>
+
+    // Добавляем событие клика на бургер
+    burger.addEventListener('click', toggleMenu);
+    </script>
 </body>
